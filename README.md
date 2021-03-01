@@ -1,0 +1,1 @@
+This repository contains the assignment of Javascript session i.e. Digital Clock using Javascript.
