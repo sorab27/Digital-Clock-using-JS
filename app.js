@@ -51,13 +51,9 @@ function showTime() {
 
   var time = hour + ":" + min + ":" + sec + " " + session;
 
-  document.getElementById("date").innerText = date + " " + month + " " + year;
-  document.getElementById("date").innerContent =
-    date + " " + month + " " + year;
-  document.getElementById("greet").innerText = greet;
-  document.getElementById("greet").textContent = greet;
-  document.getElementById("clock").innerText = time; //innerText will not work in firefox;
-  document.getElementById("clock").textContent = time; //textContent will not work in IE;
+  document.getElementById("date").innerHTML = date + " " + month + " " + year;
+  document.getElementById("greet").innerHTML = greet;
+  document.getElementById("clock").innerHTML = time;
 }
 
 setInterval(showTime, 1000);
